@@ -1,37 +1,62 @@
+/* Quitar estilos predeterminados */
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif', sans-serif;
     background-color: #f0f0f0;
     color: #333;
 }
 
-header {
+/* Estilos para el encabezado del sitio */
+.header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
+.header h1 {
     font-size: 36px;
 }
 
-nav ul {
+.header ul {
     list-style-type: none;
 }
 
-nav ul li {
+.header ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+.header ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+/* Estilos para el icono de menú */
+.navbar-toggler-icon {
+    background-color: #fff;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1);
+}
+
+/* Cambia el color de fondo del icono al pasar el mouse sobre el botón */
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #ff5733;
 }
 
 main {
@@ -44,6 +69,7 @@ section {
 
 h2 {
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -51,6 +77,10 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+}
+
+.seccion-comun {
+    padding: 20px;
 }
 
 .seccion-bienvenida {
@@ -78,7 +108,8 @@ footer {
     line-height: 1.5;
 }
 
-.btn {
+/* Estilos para los botones del sitio */
+.boton {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff5733;
@@ -94,7 +125,7 @@ footer {
     background-color: #ff3300;
 }
 
-.seccion-deporte {
+.seccion-deportes {
     background-color: #f0f0f0;
     padding: 40px;
 }
@@ -133,6 +164,7 @@ footer {
     margin-bottom: 5px;
 }
 
+/* Estilos para campos de entrada de formulario */
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
@@ -147,6 +179,7 @@ footer {
     resize: vertical;
 }
 
+/* Estilos para el botón de enviar el formulario */
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #007acc;
@@ -160,4 +193,47 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0055a5;
+}
+
+
+/* ---------------------------------------
+            Responsive Design
+---------------------------------------- */
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    /* Personalizar el fondo de la barra de navegación */
+    .navbar {
+        background-color: #444;
+    }
+
+    /* Estilos adicionales para la sección de bienvenida */
+    .seccion-bienvenida {
+        padding: 60px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    /* Ocultar el botón de navegación en la barra de navegación para dispositivos móviles */
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    /* Estilos adicionales para la sección de bienvenida en dispositivos móviles */
+    .seccion-bienvenida {
+        padding: 30px;
+    }
 }
