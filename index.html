@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Club Deportivo XYZ</title>
+</head>
+<body>
+    <header>
+        <h1>Club Deportivo XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-bienvenida">
+            <img src="./img/imagen-bienvenida.jpg" alt="Imagen de bienvenida">
+            <h2>¡Bienvenido a nuestro Club Deportivo!</h2>
+            <p>Somos un club dedicado a promover la actividad física y el deporte en la comunidad. Ofrecemos una variedad de deportes para todas las edades y niveles de habilidad.</p>
+            <a href="#" class="btn">¡Únete a nosotros!</a>
+        </section>
+
+        <section class="seccion-deportes">
+            <h2>Nuestros Deportes</h2>
+            <ul>
+                <li>Fútbol</li>
+                <li>Baloncesto</li>
+                <li>Atletismo</li>
+                <li>Tenis</li>
+            </ul>
+        </section>
+        <section class="seccion-contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros a través de este formulario.</p>
+            <form>
+                <div class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Club Deportivo XYZ. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
